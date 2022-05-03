@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #EDEDE9;
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 80%;
+    grid-template-columns: auto 13%;
+    grid-template-areas: "header main main"
+                         "header main main"
+                         "header footer footer";
+}
+
+
+/* MENU NAVEGABLE PARA TODOS LOS HTML */
+.header-container {
+    grid-area: header;
+    background-color: #c2a997;
+    color: beige;
+    padding-top: 15%;
+    padding-bottom: 50%;
+    padding-right: 13%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+}
+
+.nav {
+    position: fixed;
+    left: 70px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-family: 'Dosis', sans-serif;
+    line-height: 65px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+a:hover {
+    color: #ecddd5;
+}
+/* FIN MENU NAVEGABLE */
+
+
+.main-container {
+    grid-area: main;
+    margin-left: 15%;
+}
+
+
+/* INDEX HTML */
+.section-foto{
+    position: relative;
+    top: 30px;
+}
+
+.home-div{
+    background-color: #e6dbd2fd;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 7%;
+}
+
+.home-div img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-texto {
+    position: relative;
+    bottom: 50px;
+    padding-left: 6%;
+    margin-left: 10%;
+    color: black;
+    opacity: 0.8;
+}
+
+.section-texto h1{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-texto h3{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 0.8;
+}
+/* FIN INDEX */
+
+
+/* NewBorn Familia y Galeria HTML */
+/* SOLO TEXTOS */
+.titulo-nfg {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.titulo-nfg h1{
+    font-size: 45px;
+    position: relative;
+    right: 45%;
+    padding-bottom: 2%;
+}
+
+.titulo-nfg h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    position: relative;
+    right: 2%;
+    padding-bottom: 1%;
+}
+
+.titulo-nfg p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding-bottom: 1%;
+    margin-right: 2%;
+}
+
+.h4-div{
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-size: 20px;
+}
+
+
+/* Segunda seccion de texto */
+.new-div p {
+    font-family: 'Nunito', sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+
+.p-div{
+    margin-left: 1.5%;
+}
+
+.tm-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+/* FIN TEXTO */
+
+
+/* GRILLA DE FOTOS */
+.grilla-fotos {
+    background-color: #e6dbd2fd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-right: 30px;
+}
+
+.grilla-fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* FIN DE GRILLA Y HTML'S */
+
+
+/* CONTACTO HTML */
+.div-text{
+    padding-left: 60%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.redes{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+/* FIN HTML CONTACTO */
+
+
+/* FOOTER */
+.footer-container {
+    grid-area: footer;
+    background-color: #EDEDE9;
+    color: black;
+    margin-top: 4%;
+    padding-top: 2%;
+    margin-left: 13%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.logoig {
+    position: relative;
+    bottom: 50px;
+    left: 300px;
+}
+
+.logoface {
+    position: relative;
+    bottom: 50px;
+    left: 200px;
+}
+/* FIN DEL FOOTER */
+
+/* @media querys */
+
+/* mobile */
+
+@media only screen and (max-width:450px) {
+    
+/* --------------------grid---------------- */
+    .grid-container{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto 80%;
+        grid-template-columns: auto 15%;
+        grid-template-areas: "header main main"
+                             "header main main"
+                             "header footer footer";
+    }
+    
+/* ---------------nav-header----------------- */
+
+    .header-container {
+        grid-area: header;
+        background-color: #c2a997;
+        color: beige;
+        height: 100vh;
+        padding-right: 15%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        z-index: 2;
+    }
+    
+    .nav {
+        position: fixed;
+        left: 2%;
+    }
+    
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        font-family: 'Dosis', sans-serif;
+        line-height: 65px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        opacity: 0.7;
+    }
+    
+    a:hover {
+        color: #ecddd5;
+    }
+
+/* --------------main----------------- */
+    .main-container {
+        grid-area: main;
+        margin-left: 20%;
+    }
+
+
+/* ---------------index------------- */
+.section-foto{
+    position: relative;
+    top: 30px;
+}
+
+.home-div{
+    background-color: #e6dbd2fd;
+    border-radius: 10px;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 15%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 10%;
+
+}
+
+.home-div img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-texto {
+    position: relative;
+    bottom: 60px;
+    padding-left: 0;
+    margin-left: 10%;
+    color: black;
+    opacity: 0.8;
+}
+
+.section-texto h1{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-texto h3{
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 0.8;
+}
+
+/* -------textos newborn familia galeria-------- */
+.titulo-nfg {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.titulo-nfg h1{
+    font-size: 18px;
+    position: relative;
+    right: 45%;
+    padding-bottom: 2%;
+}
+
+.titulo-nfg h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    position: relative;
+    right: 2%;
+    padding-bottom: 1%;
+}
+
+.titulo-nfg p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    padding-bottom: 1%;
+    margin-right: 2%;
+}
+
+.h4-div{
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-size: 13px;
+}
+
+/* ------------Segunda seccion de texto----------- */
+.new-div p {
+    font-family: 'Nunito', sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 13px;
+}
+
+.p-div{
+    margin-left: 1.5%;
+}
+
+.tm-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    right: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 7.5px;
+}
+/* ----------foto debo/sobre mi------------ */
+.foto-debo{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 20%;
+    padding-bottom: 3%;
+}
+
+/* -----------contacto---------- */
+.iframe{
+    width: 300px;
+    height: 300px;
+}
+
+.div-text{
+    /* padding-left: 20%; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+.redes{
+    padding-top: 20px;
+    width:320px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ---------------footer------------------------- */
+    
+.footer-container {
+    grid-area: footer;
+    background-color: #EDEDE9;
+    color: black;
+    margin-top: 15%;
+    padding-top: 10%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 10px;
+    right: 30px;
+}
+
+.logoig {
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+}
+
+.logoface {
+    position: relative;
+    bottom: 50px;
+    left: 200px;
+}
+
+
+}
