@@ -1,7 +1,6 @@
 {
   "name": "proyecto-joelserrano",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +17,8 @@
   "homepage": "https://github.com/joel-serrano/Proyecto-Final#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
-  }
+    "nodemon": "^2.0.16",
+    "nodesass": "^0.0.2-security"
+  },
+  "description": ""
 }
