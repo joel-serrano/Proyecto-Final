@@ -1,0 +1,116 @@
+.header-container {
+  grid-area: header;
+  background-color: #c2a997;
+  color: beige;
+  padding-top: 15%;
+  padding-bottom: 50%;
+  padding-right: 2%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 2;
+}
+.header-container .nav {
+  position: fixed;
+}
+.header-container .nav .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  line-height: 60px;
+}
+.header-container .nav .menu ul li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+.footer-container {
+  grid-area: footer;
+  color: black;
+  margin-top: 4%;
+  padding-top: 2%;
+  margin-left: 13%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+}
+.footer-container .logoface {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+}
+.footer-container .logoig {
+  position: relative;
+  bottom: 50px;
+  left: 350px;
+}
+.footer-container h4 {
+  font-size: 15px;
+}
+
+.main-container {
+  grid-area: main;
+  margin-left: 10%;
+}
+.main-container .section-foto {
+  position: relative;
+  top: 30px;
+}
+.main-container .section-foto .home-div {
+  background-color: rgba(230, 219, 210, 0.9921568627);
+  border-radius: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+}
+.main-container .section-foto .home-div img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.main-container .section-texto {
+  position: relative;
+  bottom: 70px;
+  padding-left: 6%;
+  margin-left: 10%;
+  color: black;
+  opacity: 0.8;
+}
+.main-container .section-texto h2 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.main-container .section-texto h4 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  opacity: 0.8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 226, 219);
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 80%;
+  grid-template-columns: auto 13%;
+  grid-template-areas: "header main main" "header main main" "header footer footer";
+}
+
+/*# sourceMappingURL=style.css.map */

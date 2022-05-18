@@ -1,0 +1,41 @@
+.main-container{
+    grid-area: main;
+    margin-left: 10%;
+    .section-foto{
+        position: relative;
+        top: 30px;
+        .home-div{
+            background-color: #e6dbd2fd;
+            border-radius: 10px;
+            margin-right: 10%;
+            margin-left: 10%;
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 7%;
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .section-texto {
+        position: relative;
+        bottom: 70px;
+        padding-left: 6%;
+        margin-left: 10%;
+        color: black;
+        opacity: 0.8;
+         h2{
+            font-size: 30px;
+            font-family: 'Raleway', sans-serif;
+        }
+        h4{
+            font-size: 20px;
+            font-family: 'Nunito', sans-serif;
+            color: black;
+            opacity: 0.8;
+        }
+    }
+}

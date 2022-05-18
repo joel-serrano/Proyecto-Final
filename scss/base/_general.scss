@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 226, 219);
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 80%;
+    grid-template-columns: auto 13%;
+    grid-template-areas: "header main main"
+                         "header main main"
+                         "header footer footer";
+}
