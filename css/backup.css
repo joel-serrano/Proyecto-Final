@@ -121,18 +121,11 @@ ul li a:hover {
 }
 
 .titulo-nfg h1{
+    
     font-size: 45px;
     position: relative;
     right: 45%;
     padding-bottom: 2%;
-}
-
-.titulo-nfg h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    position: relative;
-    right: 2%;
-    padding-bottom: 1%;
 }
 
 .titulo-nfg p {
@@ -141,7 +134,10 @@ ul li a:hover {
     padding-bottom: 1%;
     margin-right: 2%;
 }
-
+.p-izq{
+    position: relative;
+    right: 18%;
+}
 .h4-div{
     padding-top: 2%;
     padding-bottom: 6%;

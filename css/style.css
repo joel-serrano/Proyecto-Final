@@ -1,28 +1,27 @@
+.footer-container, .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-container {
   grid-area: header;
   background-color: #c2a997;
-  color: beige;
-  padding-top: 15%;
+  padding-top: 17%;
   padding-bottom: 50%;
   padding-right: 2%;
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   z-index: 2;
 }
-.header-container .nav {
-  position: fixed;
-}
-.header-container .nav .menu {
+.header-container nav .menu {
   list-style: none;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Dosis", sans-serif;
-  line-height: 60px;
+  line-height: 40px;
 }
-.header-container .nav .menu ul li a {
+.header-container nav .menu li a {
   text-decoration: none;
   color: black;
   opacity: 0.7;
@@ -34,8 +33,6 @@
   margin-top: 4%;
   padding-top: 2%;
   margin-left: 13%;
-  display: flex;
-  justify-content: center;
   position: relative;
   bottom: 20px;
 }
@@ -84,8 +81,8 @@
   color: black;
   opacity: 0.8;
 }
-.main-container .section-texto h2 {
-  font-size: 30px;
+.main-container .section-texto h1 {
+  font-size: 25px;
   font-family: "Raleway", sans-serif;
 }
 .main-container .section-texto h4 {
@@ -111,6 +108,12 @@ body {
   grid-template-rows: auto 80%;
   grid-template-columns: auto 13%;
   grid-template-areas: "header main main" "header main main" "header footer footer";
+}
+
+.header-container, .footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

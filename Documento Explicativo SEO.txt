@@ -1,0 +1,18 @@
+Modifiqué el SEO de las 6 páginas
+
+
+INDEX:
+Descripcion:
+Con el código <meta name="description"> le agregué esta descripción: Fotografia para bebes, niños y niñas, fotografia maternal. Elegí tu Temática para darle estilo a tu sesion de fotos!.
+
+Palabras Clave:
+Con el código <meta name="keywords"> le agregué los siguientes keywords: fotografia, fotografias para bebes, bebes, fotografia maternal, fotografias para niños, niños, maternal, madres, fotografias para niñas, fotografia recien nacidos, newborn.
+
+Encabezado:
+Para el h1, utilicé el texto: Debora Naranjo - Fotografias.
+
+Para las diferentes páginas, sumé mas palabras en el <meta name="keywords"> refiriendose a lo que se hablá en las distintas páginas.
+
+También reemplace todos los h2 que tenia como "titulos" en h1.
+
+No modifiqué los alt de las imágenes.

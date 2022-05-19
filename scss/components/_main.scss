@@ -1,8 +1,10 @@
+@import '../base/mapas';
+
 .main-container{
     grid-area: main;
     margin-left: 10%;
     .section-foto{
-        position: relative;
+        position: map-get($general, position);
         top: 30px;
         .home-div{
             background-color: #e6dbd2fd;
@@ -21,14 +23,14 @@
         }
     }
     .section-texto {
-        position: relative;
+        position: map-get($general, position);
         bottom: 70px;
         padding-left: 6%;
         margin-left: 10%;
         color: black;
         opacity: 0.8;
-         h2{
-            font-size: 30px;
+         h1{
+            font-size: 25px;
             font-family: 'Raleway', sans-serif;
         }
         h4{

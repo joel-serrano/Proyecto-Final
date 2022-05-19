@@ -1,53 +1,50 @@
-.header-container{
+@import '../base/mapas';
+@import '../base/extends';
+@import '../base/mixin';
+
+.header-container {
     grid-area: header;
-    background-color: #c2a997;
-    color: beige;
-    padding-top: 15%;
+    background-color: map-get($general, bg-color);
+    padding-top: 17%;
     padding-bottom: 50%;
     padding-right: 2%;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @extend %flex;
     z-index: 2;
-    .nav{
-        position: fixed;
-        .menu{
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            font-size: 20px;
-            font-family: 'Dosis', sans-serif;
-            line-height: 60px;
-            ul{
-                li{
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        opacity: 0.7;
-                    }
-                    }
-                }
+        nav{
+            .menu{
+                list-style: none;
+                @include flex (flex, column);
+                font-size: 30px;
+                font-family: 'Dosis', sans-serif;
+                line-height: 40px;
+                    li{
+                        a{
+                            text-decoration: map-get($general, decoration);
+                            color: black;
+                            opacity: 0.7;
+                        }
+                    }   
             }
-        }
-    }
+        }   
+}
+
     .footer-container {
         grid-area: footer;
         color: black;
         margin-top: 4%;
         padding-top: 2%;
         margin-left: 13%;
-        display: flex;
-        justify-content: center;
-        position: relative;
+        @extend %flex;
+        position: map-get($general, position);
         bottom: 20px;
         .logoface {
-            position: relative;
+            position: map-get($general, position);
             bottom: 50px;
             left: 100px;
         }
         .logoig {
-            position: relative;
+            position: map-get($general, position);
             bottom: 50px;
             left: 350px;
         }
