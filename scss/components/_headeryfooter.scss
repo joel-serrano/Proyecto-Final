@@ -1,6 +1,7 @@
 @import '../base/mapas';
 @import '../base/extends';
 @import '../base/mixin';
+@import '../base/breakspoints';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
 .header-container {
@@ -12,6 +13,39 @@
     position: fixed;
     @extend %flex;
     z-index: 2;
+    @include mobile{
+        grid-area: header;
+        background-color: #c2a997;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        border-radius: 5px;
+        margin-top: 1%;
+        margin-left: 1%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        z-index: 2;
+    }   
+     @include tablet{
+        grid-area: header;
+        background-color: #c2a997;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        border-radius: 5px;
+        margin-top: 1%;
+        margin-left: 1%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        z-index: 2;
+    }
+
         nav{
             .menu{
                 list-style: none;
@@ -21,6 +55,12 @@
                 line-height: 60px;
                 position: relative;
                 left: 7%;
+                @include tablet{
+                    font-size: 17px;
+                }
+                @include laptop{
+                    font-size: 17px;
+                }
                     li{
                         a{
                             text-decoration: map-get($general, decoration);
@@ -31,7 +71,6 @@
             }
         }   
 }
-
     .footer-container {
         grid-area: footer;
         color: black;
@@ -41,6 +80,20 @@
         @extend %flex;
         position: map-get($general, position);
         bottom: 20px;
+        @include tablet{
+            position: relative;
+            bottom: -100%;
+        }
+        @include laptop{
+            position: relative;
+            bottom: -100%;
+        }
+        @include mobile{
+            position: relative;
+            right: 8%;
+            margin-bottom: 10%;
+            font-size: 14px;
+        }
         .logoface {
             position: map-get($general, position);
             bottom: 50px;
@@ -50,9 +103,20 @@
             position: map-get($general, position);
             bottom: 50px;
             left: 350px;
+            @include mobile{
+                position: relative;
+                left:290px;
+            }
         }
         h4{
             font-size: 15px;
+            @include mobile{
+            font-size: 12px;
+            }
         }
     }
-    
+    @include mobile{
+        .footer-index{
+            margin-bottom: 25%;
+        }
+    }

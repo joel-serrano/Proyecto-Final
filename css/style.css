@@ -16,6 +16,42 @@
   position: fixed;
   z-index: 2;
 }
+@media only screen and (max-width: 550px) {
+  .header-container {
+    grid-area: header;
+    background-color: #c2a997;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 1%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .header-container {
+    grid-area: header;
+    background-color: #c2a997;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 1%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+  }
+}
 .header-container nav .menu {
   list-style: none;
   display: flex;
@@ -25,6 +61,16 @@
   line-height: 60px;
   position: relative;
   left: 7%;
+}
+@media only screen and (max-width: 990px) {
+  .header-container nav .menu {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .header-container nav .menu {
+    font-size: 17px;
+  }
 }
 .header-container nav .menu li a {
   text-decoration: none;
@@ -41,6 +87,26 @@
   position: relative;
   bottom: 20px;
 }
+@media only screen and (max-width: 990px) {
+  .footer-container {
+    position: relative;
+    bottom: -100%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .footer-container {
+    position: relative;
+    bottom: -100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .footer-container {
+    position: relative;
+    right: 8%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+}
 .footer-container .logoface {
   position: relative;
   bottom: 50px;
@@ -51,15 +117,46 @@
   bottom: 50px;
   left: 350px;
 }
+@media only screen and (max-width: 550px) {
+  .footer-container .logoig {
+    position: relative;
+    left: 290px;
+  }
+}
 .footer-container h4 {
   font-size: 15px;
 }
+@media only screen and (max-width: 550px) {
+  .footer-container h4 {
+    font-size: 12px;
+  }
+}
 
+@media only screen and (max-width: 550px) {
+  .footer-index {
+    margin-bottom: 25%;
+  }
+}
 .main-container {
   grid-area: main;
   margin-left: 10%;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+@media only screen and (max-width: 990px) {
+  .main-container {
+    margin-left: 14%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .main-container {
+    margin-left: 13%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container {
+    margin-left: 0%;
+  }
 }
 .main-container .section-foto {
   position: relative;
@@ -75,6 +172,20 @@
   padding-right: 5%;
   padding-bottom: 7%;
 }
+@media only screen and (max-width: 550px) {
+  .main-container .section-foto .home-div {
+    background-color: rgba(230, 219, 210, 0.9921568627);
+    position: relative;
+    top: 80px;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+  }
+}
 .main-container .section-foto .home-div img {
   border-radius: 10px;
   width: 100%;
@@ -88,15 +199,49 @@
   color: black;
   opacity: 0.8;
 }
+@media only screen and (max-width: 1600px) {
+  .main-container .section-texto {
+    position: relative;
+    bottom: 40px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .main-container .section-texto {
+    position: relative;
+    bottom: 30px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container .section-texto {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(189, 185, 185);
+    padding: 4%;
+    margin-right: 12%;
+    margin-bottom: 15%;
+    border-radius: 10px;
+  }
+}
 .main-container .section-texto h1 {
   font-size: 25px;
   font-family: "Source Serif Pro", serif;
+}
+@media only screen and (max-width: 1600px) {
+  .main-container .section-texto h1 {
+    font-size: 20px;
+  }
 }
 .main-container .section-texto h4 {
   font-size: 20px;
   font-family: "Lato", sans-serif;
   color: black;
   opacity: 0.8;
+}
+@media only screen and (max-width: 1600px) {
+  .main-container .section-texto h4 {
+    font-size: 16px;
+  }
 }
 
 section .grilla-fotos {
@@ -113,6 +258,27 @@ section .grilla-fotos {
   padding-right: 5%;
   padding-bottom: 3%;
   margin-right: 30px;
+}
+@media only screen and (max-width: 550px) {
+  section .grilla-fotos {
+    background-color: rgba(230, 219, 210, 0.9921568627);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  section .grilla-fotos .foto21 {
+    display: none;
+  }
 }
 section .grilla-fotos img {
   width: 100%;
@@ -138,9 +304,25 @@ section .grilla-fotos img {
   position: relative;
   left: 43%;
 }
+@media only screen and (max-width: 550px) {
+  .titulo-nfg h1 {
+    position: relative;
+    left: 34%;
+    font-size: 40px;
+    margin-top: 5%;
+  }
+}
 .titulo-nfg p {
   font-family: "Lato", sans-serif;
   font-size: 20px;
+}
+@media only screen and (max-width: 550px) {
+  .titulo-nfg p {
+    font-size: 18px;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 section .tm-div {
@@ -153,12 +335,29 @@ section .tm-div {
   font-family: "Dancing Script", cursive;
   font-size: 22px;
 }
+@media only screen and (max-width: 550px) {
+  section .tm-div {
+    margin-top: 5%;
+    position: relative;
+    top: 30%;
+  }
+}
 
 .new-div p {
   font-family: "Lato", sans-serif;
   padding-top: 1%;
   padding-bottom: 1%;
   font-size: 20px;
+}
+@media only screen and (max-width: 550px) {
+  .new-div p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 .titulo-nfg .sobre-div {
@@ -170,6 +369,12 @@ section .tm-div {
   width: 50%;
   height: 50%;
 }
+@media only screen and (max-width: 550px) {
+  .titulo-nfg .sobre-div {
+    width: 90%;
+    height: 90%;
+  }
+}
 .titulo-nfg .sobre-div .foto-debo {
   border-radius: 10px;
   width: 100%;
@@ -180,29 +385,100 @@ section .tm-div {
   position: relative;
   right: 39%;
 }
+@media only screen and (max-width: 550px) {
+  .titulo-contenedor {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+  .titulo-contenedor h1 {
+    position: relative;
+    left: 43%;
+  }
+}
 .titulo-contenedor p {
   position: relative;
   left: 43%;
 }
+@media only screen and (max-width: 990px) {
+  .titulo-contenedor h1 {
+    position: relative;
+    left: 43%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .titulo-contenedor h1 {
+    position: relative;
+    left: 43%;
+  }
+}
 
 .contacto-container {
-  margin-left: -25%;
+  margin-left: -30%;
+}
+@media only screen and (max-width: 550px) {
+  .contacto-container {
+    margin-left: 0;
+  }
 }
 
 .redes {
-  width: 600px;
+  width: 620px;
   display: flex;
   justify-content: space-around;
   position: relative;
-  left: 61%;
+  left: 60%;
+}
+@media only screen and (max-width: 550px) {
+  .redes {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .redes {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .redes {
+    display: none;
+  }
 }
 
 .formulario {
   display: flex;
+  background-color: rgb(194, 193, 193);
+  border-radius: 10px;
+  margin-left: 4%;
+  padding: 2%;
+  width: 95%;
+  height: 95%;
+}
+@media only screen and (max-width: 550px) {
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(194, 193, 193);
+    border-radius: 10px;
+    margin-left: 0;
+    margin-bottom: 60%;
+    padding: 8%;
+    width: 100%;
+    height: 100%;
+  }
 }
 .formulario iframe {
   margin-right: 20%;
   margin-left: 10%;
+}
+@media only screen and (max-width: 550px) {
+  .formulario iframe {
+    margin-top: -50%;
+    position: relative;
+    right: 10%;
+    width: 80%;
+    height: 30%;
+  }
 }
 .formulario .form {
   width: 340px;
@@ -217,6 +493,12 @@ section .tm-div {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   position: relative;
+}
+@media only screen and (max-width: 550px) {
+  .formulario .form {
+    margin-bottom: 40%;
+    margin-top: -50%;
+  }
 }
 .formulario .form h2 {
   margin: 10px 0;
@@ -280,9 +562,17 @@ section .tm-div {
 }
 
 .footer-contacto {
-  padding-right: 40%;
+  padding-right: 30%;
   padding-top: 8%;
   position: relative;
+}
+@media only screen and (max-width: 550px) {
+  .footer-contacto {
+    margin-top: 20%;
+    padding: 10px;
+    position: relative;
+    top: 3%;
+  }
 }
 
 * {
