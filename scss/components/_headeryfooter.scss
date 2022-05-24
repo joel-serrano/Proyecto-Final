@@ -4,6 +4,7 @@
 @import '../base/breakspoints';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
+// -----------------------------------Header
 .header-container {
     grid-area: header;
     background-color: map-get($general, bg-color);
@@ -71,6 +72,8 @@
             }
         }   
 }
+
+// -----------------------------Footer
     .footer-container {
         grid-area: footer;
         color: black;

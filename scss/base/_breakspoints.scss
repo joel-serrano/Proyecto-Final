@@ -1,3 +1,5 @@
+// --------------------Breakpoints para las mediaquery
+
 @mixin mobile {
     @media only screen and (max-width:550px){
         @content;
