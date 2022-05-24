@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
 .footer-container, .header-container {
   display: flex;
   justify-content: center;
@@ -7,9 +10,9 @@
 .header-container {
   grid-area: header;
   background-color: #c2a997;
-  padding-top: 17%;
+  padding-top: 13%;
   padding-bottom: 50%;
-  padding-right: 2%;
+  padding-right: 1%;
   position: fixed;
   z-index: 2;
 }
@@ -17,9 +20,11 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  font-size: 30px;
-  font-family: "Dosis", sans-serif;
-  line-height: 40px;
+  font-size: 22px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 60px;
+  position: relative;
+  left: 7%;
 }
 .header-container nav .menu li a {
   text-decoration: none;
@@ -32,7 +37,7 @@
   color: black;
   margin-top: 4%;
   padding-top: 2%;
-  margin-left: 13%;
+  margin-left: 6.5%;
   position: relative;
   bottom: 20px;
 }
@@ -53,6 +58,8 @@
 .main-container {
   grid-area: main;
   margin-left: 10%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .main-container .section-foto {
   position: relative;
@@ -83,13 +90,199 @@
 }
 .main-container .section-texto h1 {
   font-size: 25px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Source Serif Pro", serif;
 }
 .main-container .section-texto h4 {
   font-size: 20px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
   color: black;
   opacity: 0.8;
+}
+
+section .grilla-fotos {
+  background-color: rgba(230, 219, 210, 0.9921568627);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto;
+  justify-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  margin-right: 30px;
+}
+section .grilla-fotos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contenedor {
+  margin-bottom: -40px;
+}
+
+.titulo-nfg {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.titulo-nfg h1 {
+  align-items: center;
+  font-size: 45px;
+  font-family: "Source Serif Pro", serif;
+  padding-bottom: 2%;
+  position: relative;
+  left: 43%;
+}
+.titulo-nfg p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+section .tm-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  right: 1%;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+}
+
+.new-div p {
+  font-family: "Lato", sans-serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 20px;
+}
+
+.titulo-nfg .sobre-div {
+  background-color: rgba(230, 219, 210, 0.9921568627);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  margin-top: -2%;
+  padding: 2%;
+  width: 50%;
+  height: 50%;
+}
+.titulo-nfg .sobre-div .foto-debo {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.titulo-contenedor {
+  position: relative;
+  right: 39%;
+}
+.titulo-contenedor p {
+  position: relative;
+  left: 43%;
+}
+
+.contacto-container {
+  margin-left: -25%;
+}
+
+.redes {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 61%;
+}
+
+.formulario {
+  display: flex;
+}
+.formulario iframe {
+  margin-right: 20%;
+  margin-left: 10%;
+}
+.formulario .form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 15px -10px #000;
+  margin: 0;
+  margin-left: 4%;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.formulario .form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+.formulario .form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+.formulario .form input:focus {
+  border-bottom: 2px solid #78788c;
+}
+.formulario .form input:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.formulario .form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.formulario .form button:hover {
+  background: #78788c;
+  color: #fff;
+}
+.formulario .form div {
+  content: "Hi";
+  position: absolute;
+  bottom: -10px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 40px;
+  font-size: 13px;
+  box-shadow: 10px 0px 10px -10px #000;
+}
+.formulario .form span {
+  margin: 0 5px 0 15px;
+}
+
+.footer-contacto {
+  padding-right: 40%;
+  padding-top: 8%;
+  position: relative;
 }
 
 * {

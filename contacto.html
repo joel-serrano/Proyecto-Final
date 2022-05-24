@@ -12,7 +12,7 @@
     <!-- ANIMACIONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/backup.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="imagenes/camara.png" type="image/x-icon">
     <meta name="description" content="Fotografia para bebes, niños y niñas, fotografia maternal. Elegí tu Temática para darle estilo a tu sesion de fotos!">
@@ -23,8 +23,8 @@
   <div class="grid-container">
       
     <!-- Navbar Bootstrap -->
-  <header>
-      <nav class="navbar navbar-expand-lg navbar-light header-container nav">
+    <header class="header-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,10 +56,10 @@
   </header>
 
 
-    <main class="main-container">
+    <main class="main-container contacto-container">
 
         <!--Section Texto-->
-        <section class="titulo-nfg">
+        <section class="titulo-nfg titulo-contenedor">
             <h1 class="animate__animated animate__fadeInRight">Me podes encontrar en</h1>
             <div class="div-text">
             <p>Francisco Portela 178 entre Leandro N. Alem y Pellegrini, Lomas de Zamora Centro<p>
@@ -78,31 +78,27 @@
         <br>
 
         <!--Iframe maps-->
-        <section>
-            <iframe
+        <section class="formulario">
+          <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1949.0759814740404!2d-58.40193146786302!3d-34.75705354544188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd37173943f6b%3A0x9ac6d8cc98e74467!2sDebora%20Naranjo%20Fotografias!5e0!3m2!1ses-419!2sar!4v1649093468045!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+                <form class="form">
+                  <h2>CONTACTAME</h2>
+                  <p type="Nombre:"><input placeholder="Escribe tu nombre aqui..."></input></p>
+                  <p type="Email:"><input placeholder="Escribe tu email aqui..."></input></p>
+                  <p type="Mensaje:"><input placeholder="Tu idea, temática, consulta..."></input></p>
+                  <button>Enviar</button>
+                  <div>
+                    <span class="fa fa-phone"></span>1123456789
+                    <span class="fa fa-envelope-o"></span> deborafotos@gmail.com
+                  </div>
+                </form>
         </section>
 
         <!--Aca iria un formulario-->
-        <section>
-
+        <section class="formulario">
         </section>
-
-        <!--Grid con Enlaces a Instagram-->
-        <section>        
-            <a href="">foto1</a>
-            <a href="">foto2</a>
-            <a href="">foto3</a>
-            <a href="">foto4</a>
-            <a href="">foto5</a>
-            <a href="">foto6</a>
-            <a href="">foto7</a>
-            <a href="">foto8</a>
-            <a href="">foto9</a>
-        </section>
-
     </main>
 
     <!--Pie de pagina-->

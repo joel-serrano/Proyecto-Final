@@ -1,12 +1,18 @@
 @import '../base/mapas';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
 
-.main-container{
+.main-container {
     grid-area: main;
     margin-left: 10%;
-    .section-foto{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    .section-foto {
         position: map-get($general, position);
         top: 30px;
-        .home-div{
+
+        .home-div {
             background-color: #e6dbd2fd;
             border-radius: 10px;
             margin-right: 10%;
@@ -15,13 +21,15 @@
             padding-left: 5%;
             padding-right: 5%;
             padding-bottom: 7%;
-            img{
+
+            img {
                 border-radius: 10px;
                 width: 100%;
                 height: 100%;
             }
         }
     }
+
     .section-texto {
         position: map-get($general, position);
         bottom: 70px;
@@ -29,15 +37,223 @@
         margin-left: 10%;
         color: black;
         opacity: 0.8;
-         h1{
+
+        h1 {
             font-size: 25px;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Source Serif Pro', serif;
         }
-        h4{
+
+        h4 {
             font-size: 20px;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Lato', sans-serif;
             color: black;
             opacity: 0.8;
         }
     }
+}
+
+
+// Grilla de fotos de Galeria - Newborn - Familia
+
+section {
+    .grilla-fotos {
+        background-color: #e6dbd2fd;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: auto;
+        justify-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
+        padding-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+        margin-right: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
+
+// Galeria - Newborn - Familia
+
+// Contenedor para galeria que me genera margin
+.contenedor {
+    margin-bottom: -40px;
+}
+
+.titulo-nfg {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        align-items: center;
+        font-size: 45px;
+        font-family: 'Source Serif Pro', serif;
+        padding-bottom: 2%;
+        position: relative;
+        left: 43%
+    }
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+}
+
+section {
+    .tm-div {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50px;
+        right: 1%;
+        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Dancing Script', cursive;
+        font-size: 22px;
+    }
+}
+
+.new-div {
+    p {
+        font-family: 'Lato', sans-serif;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 20px;
+    }
+}
+
+// Sobre mi
+
+.titulo-nfg {
+    .sobre-div {
+        background-color: #e6dbd2fd;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        margin-top: -2%;
+        padding: 2%;
+        width: 50%;
+        height: 50%;
+
+        .foto-debo {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Contacto
+.titulo-contenedor{
+    position: relative;
+    right: 39%;
+    p{
+        position: relative;
+        left: 43%;
+    }
+}
+.contacto-container{
+    margin-left: -25%;
+}
+.redes{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 61%;
+}
+
+.formulario {
+    display: flex;
+    iframe{
+        margin-right: 20%;
+        margin-left: 10%;
+    }
+    .form {
+        width: 340px;
+        height: 440px;
+        background: #e6e6e6;
+        border-radius: 8px;
+        box-shadow: 0 0 15px -10px #000;
+        margin: 0;
+        margin-left: 4%;
+        padding: 20px 30px;
+        max-width: calc(100vw - 40px);
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        h2 {
+            margin: 10px 0;
+            padding-bottom: 10px;
+            width: 180px;
+            color: #78788c;
+            border-bottom: 3px solid #78788c;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background: none;
+            outline: none;
+            resize: none;
+            border: 0;
+            font-family: 'Montserrat', sans-serif;
+            transition: all .3s;
+            border-bottom: 2px solid #bebed2;
+            &:focus {
+                border-bottom: 2px solid #78788c;
+            }        
+            &:before {
+                content: attr(type);
+                display: block;
+                margin: 28px 0 0;
+                font-size: 14px;
+                color: #5a5a5a;
+            }
+        }
+        button {
+            float: right;
+            padding: 8px 12px;
+            margin: 8px 0 0;
+            font-family: 'Montserrat', sans-serif;
+            border: 2px solid #78788c;
+            background: 0;
+            color: #5a5a6e;
+            cursor: pointer;
+            transition: all .3s;    
+        &:hover {
+            background: #78788c;
+            color: #fff
+        }
+        }
+
+    
+        div {
+            content: 'Hi';
+            position: absolute;
+            bottom: -10px;
+            right: -20px;
+            background: #50505a;
+            color: #fff;
+            width: 320px;
+            padding: 16px 4px 16px 0;
+            border-radius: 40px;
+            font-size: 13px;
+            box-shadow: 10px 0px 10px -10px #000;
+        }
+        span {
+            margin: 0 5px 0 15px;
+        }
+    }
+}
+.footer-contacto{
+    padding-right: 40%;
+    padding-top: 8%;
+    position: relative;
 }

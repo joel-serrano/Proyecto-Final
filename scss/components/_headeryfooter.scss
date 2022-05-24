@@ -1,13 +1,14 @@
 @import '../base/mapas';
 @import '../base/extends';
 @import '../base/mixin';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
 .header-container {
     grid-area: header;
     background-color: map-get($general, bg-color);
-    padding-top: 17%;
+    padding-top: 13%;
     padding-bottom: 50%;
-    padding-right: 2%;
+    padding-right: 1%;
     position: fixed;
     @extend %flex;
     z-index: 2;
@@ -15,9 +16,11 @@
             .menu{
                 list-style: none;
                 @include flex (flex, column);
-                font-size: 30px;
-                font-family: 'Dosis', sans-serif;
-                line-height: 40px;
+                font-size: 22px;
+                font-family: 'Quicksand', sans-serif;
+                line-height: 60px;
+                position: relative;
+                left: 7%;
                     li{
                         a{
                             text-decoration: map-get($general, decoration);
@@ -34,7 +37,7 @@
         color: black;
         margin-top: 4%;
         padding-top: 2%;
-        margin-left: 13%;
+        margin-left: 6.5%;
         @extend %flex;
         position: map-get($general, position);
         bottom: 20px;
