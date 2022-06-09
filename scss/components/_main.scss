@@ -144,8 +144,11 @@ section {
             object-fit: cover;
             border-radius: 1rem;
         }
+        }
     }
-}
+
+
+
 
 // ---------------------Galeria - Newborn - Familia
 
@@ -203,7 +206,7 @@ section {
             margin-top: 9%;
             margin-bottom: 1%;
             position: relative;
-            top: 0;
+            bottom: 6rem;
         }
     }
 }
@@ -244,6 +247,13 @@ section {
             border-radius: 1rem;
             width: 100%;
             height: 100%;
+        }
+            .fade-in {
+                animation: fadeIn ease 2s;
+            }
+            @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
         }
     }
 }
@@ -323,6 +333,7 @@ section {
     iframe{
         margin-right: 20%;
         margin-left: 10%;
+        border-radius: 1rem;
         @include mobile{
         margin-top: -30%;
         position: relative;
@@ -418,7 +429,7 @@ section {
     }
 }
 .footer-contacto{
-    padding-right: 30%;
+    padding-right: 31%;
     padding-top: 8%;
     position: relative;
     @include mobile{
