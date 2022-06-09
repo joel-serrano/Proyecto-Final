@@ -14,6 +14,7 @@ Página web dedicada a la muestra de trabajos fotograficos, captando momentos ú
 </ul>
 
 ## Dominio
-
-https://deborafotografias.netlify.app/index.html
-Github Pages
+<ul>
+  <li>https://deborafotografias.netlify.app/index.html</li>
+  <li>Github Pages</li>
+</ul>
