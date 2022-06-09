@@ -15,4 +15,4 @@ Para las diferentes páginas, sumé mas palabras en el <meta name="keywords"> re
 
 También reemplace todos los h2 que tenia como "titulos" en h1.
 
-No modifiqué los alt de las imágenes.
+Modifiqué todos los ALT de las imagenes.
