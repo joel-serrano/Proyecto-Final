@@ -12,10 +12,10 @@
     overflow-x: hidden;
     overflow-y: hidden;
     @include tablet{
-        margin-left: 14%;
+        margin-left: 13%;
     }
     @include laptop{
-        margin-left: 13%;
+        margin-left: 12%;
     }
     @include mobile{
         margin-left: 0%;
@@ -202,6 +202,18 @@ section {
             font-size: 2.5rem;
             margin-bottom: 1%;
         }
+        @include laptop{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            position: relative;
+            bottom: 4rem; 
+        }
+        @include tablet{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            position: relative;
+            bottom: 4rem; 
+        }
         @include mobile{
             margin-top: 9%;
             margin-bottom: 1%;
@@ -262,6 +274,9 @@ section {
 .titulo-contenedor{
     position: relative;
     right: 39%;
+    @include laptop{
+        margin-left: 20%;
+    }
     @include mobile{
     margin-top: 15%;
     margin-left: 10%;
@@ -289,8 +304,13 @@ section {
     }
 .contacto-container{
     margin-left: -25%;
+    @include laptop{
+        margin-left: -8%;
+        margin-right: 10%;
+    }
     @include mobile {
         margin-left: 0;
+        margin-right: 0;
     }
 }
 .redes{
@@ -318,6 +338,18 @@ section {
     padding: 2%;
     width: 95%;
     height: 95%;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(194, 193, 193);
+        border-radius: 1rem;
+        margin-left: 0;
+        margin-bottom: 40%;
+        padding: 30%;
+        width: 100%;
+        height: 100%;
+    }
     @include mobile{
         display: flex;
         flex-direction: column;
@@ -327,13 +359,21 @@ section {
         margin-left: 0;
         margin-bottom: 60%;
         padding: 10%;
-        width: 100%;
+        width: 100%s;
         height: 100%;
     }
     iframe{
         margin-right: 20%;
         margin-left: 10%;
         border-radius: 1rem;
+        @include tablet{
+            margin-top: -70%;
+            margin-bottom: 20%;
+            position: relative;
+            right: 50%;
+            width: 50rem;
+            height: 60%;
+            }
         @include mobile{
         margin-top: -30%;
         position: relative;
@@ -357,7 +397,7 @@ section {
         position: relative;
         @include mobile{
             margin-bottom: 70%;
-            margin-top: -50%;
+            margin-top: -30%;
         }
         h2 {
             margin: 1rem 0;
