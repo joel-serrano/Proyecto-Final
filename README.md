@@ -7,9 +7,11 @@
 Página web dedicada a la muestra de trabajos fotograficos, captando momentos únicos y publicitando sus proyectos.
 
 ## Autor
-Nombre: Joel Serrano
-LinkdIn: https://www.linkedin.com/in/joel-serrano-0ab64620b/
-Contacto: joel.serrano@hotmail.es
+<ul>
+  <li>Nombre: Joel Serrano</li>
+  <li>LinkdIn: https://www.linkedin.com/in/joel-serrano-0ab64620b/</li>
+  <li>Contacto: joel.serrano@hotmail.es</li>
+</ul>
 
 ## Dominio
 
