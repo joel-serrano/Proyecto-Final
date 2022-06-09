@@ -2,6 +2,7 @@
 @import '../base/extends';
 @import '../base/mixin';
 @import '../base/breakspoints';
+@import '../base/lista.scss';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
 // -----------------------------------Header
@@ -16,7 +17,7 @@
     z-index: 2;
     @include mobile{
         grid-area: header;
-        background-color: #c2a997;
+        background-color: nth($colores, 3);
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 2%;
@@ -32,7 +33,7 @@
     }   
      @include tablet{
         grid-area: header;
-        background-color: #c2a997;
+        background-color: nth($colores, 3);
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 2%;
@@ -51,21 +52,21 @@
             .menu{
                 list-style: none;
                 @include flex (flex, column);
-                font-size: 22px;
+                font-size: nth($textos, 3);
                 font-family: 'Quicksand', sans-serif;
                 line-height: 60px;
                 position: relative;
                 left: 7%;
                 @include tablet{
-                    font-size: 17px;
+                    font-size: 1.7rem;
                 }
                 @include laptop{
-                    font-size: 17px;
+                    font-size: 1.7rem;
                 }
                     li{
                         a{
                             text-decoration: map-get($general, decoration);
-                            color: black;
+                            color: nth($colores, 4);
                             opacity: 0.7;
                         }
                     }   
@@ -76,7 +77,7 @@
 // ---------------------------------Footer
     .footer-container {
         grid-area: footer;
-        color: black;
+        color: nth($colores, 4);
         margin-top: 4%;
         padding-top: 2%;
         margin-left: 6.5%;
@@ -93,9 +94,8 @@
         }
         @include mobile{
             position: relative;
-            right: 8%;
+            right: 10%;
             margin-bottom: 10%;
-            font-size: 14px;
         }
         .logoface {
             position: map-get($general, position);
@@ -112,9 +112,9 @@
             }
         }
         h4{
-            font-size: 15px;
+            font-size: 1.5rem;
             @include mobile{
-            font-size: 12px;
+            font-size: 1.2rem;
             }
         }
     }
