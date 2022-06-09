@@ -102,6 +102,7 @@
 @media only screen and (max-width: 550px) {
   .footer-container {
     position: relative;
+    padding: -10%;
     right: 10%;
     margin-bottom: 10%;
   }
@@ -127,13 +128,13 @@
 }
 @media only screen and (max-width: 550px) {
   .footer-container h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .footer-index {
-    margin-bottom: 25%;
+    margin-bottom: 27%;
   }
 }
 * {
@@ -224,20 +225,20 @@ body {
 @media only screen and (max-width: 1600px) {
   .main-container .section-texto {
     position: relative;
-    bottom: 4rem;
+    bottom: 2rem;
   }
 }
 @media only screen and (max-width: 990px) {
   .main-container .section-texto {
     position: relative;
-    bottom: 3rem;
+    bottom: 1rem;
   }
 }
 @media only screen and (max-width: 550px) {
   .main-container .section-texto {
     position: relative;
-    top: 10%;
-    left: 10%;
+    top: 13%;
+    left: 7.5%;
     background-color: rgb(194, 193, 193);
     padding: 4%;
     margin-right: 12%;
@@ -254,6 +255,16 @@ body {
     font-size: 2rem;
   }
 }
+@media only screen and (max-width: 990px) {
+  .main-container .section-texto h1 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container .section-texto h1 {
+    font-size: 1.9rem;
+  }
+}
 .main-container .section-texto h4 {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
@@ -263,6 +274,16 @@ body {
 @media only screen and (max-width: 1600px) {
   .main-container .section-texto h4 {
     font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .main-container .section-texto h4 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container .section-texto h4 {
+    font-size: 1.4rem;
   }
 }
 
@@ -565,7 +586,7 @@ section .tm-div h3 {
   .formulario iframe {
     margin-top: -30%;
     position: relative;
-    right: 10%;
+    right: 15%;
     width: 100%;
     height: 30%;
   }
@@ -586,8 +607,9 @@ section .tm-div h3 {
 }
 @media only screen and (max-width: 550px) {
   .formulario .form {
-    margin-bottom: 70%;
-    margin-top: -30%;
+    margin-bottom: 60%;
+    margin-top: -60%;
+    margin-left: -4%;
   }
 }
 .formulario .form h2 {
